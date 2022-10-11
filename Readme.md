@@ -28,6 +28,8 @@ itens:
     <li>Opcionalmente, pode gerar relatórios de itens emprestados pendentes.</li>
 </ul>
 
+### Etapa 1
+
 <p>
 Na etapa 1, começaremos a conhecer HTML, sua evolução histórica e suas estruturas para a criação e formatação de páginas web, trabalhando com vínculos, formulários, listas e tabelas, reconhecendo as declarações HTML e aplicando os conceitos de HTML5, identificando e empregando suas respectivas
 tags. Começaremos a elaborar páginas HTML com as corretas definições e conceitos.
