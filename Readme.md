@@ -31,6 +31,14 @@ itens:
 ### Etapa 1
 
 <p>
-Na etapa 1, começaremos a conhecer HTML, sua evolução histórica e suas estruturas para a criação e formatação de páginas web, trabalhando com vínculos, formulários, listas e tabelas, reconhecendo as declarações HTML e aplicando os conceitos de HTML5, identificando e empregando suas respectivas
-tags. Começaremos a elaborar páginas HTML com as corretas definições e conceitos.
+1. Planejamento do modelo das páginas que serão criadas, pensando no conteúdo que será inserido em cada uma delas, para que atendam à estrutura solicitada para o projeto. O modelo pode ser desenhado de forma a organizar todos os itens que serão criados em seguida, de forma simples, com uma estrutura de organograma em um editor de textos, como o Word, para que tenhamos um mapa geral dele.
+2. Criação dos arquivos e vínculos simples da estrutura, já utilizando as tags HTML para ligação e os demais conceitos aprendidos que podem fazer parte da criação das páginas.
+3. Planejamento dos dados que farão parte do projeto, criando uma tabela simples no Excel para organizar os dados e seus tipos, que serão necessários nas páginas a ser criadas e posteriormente inseridos no banco de dados.
+</p>
+
+### Etapa 2
+
+<p>
+1. Organização gráfica das páginas, campos e demais itens que fazem parte do projeto, criando um padrão gráfico que será utilizado em todo ele (um arquivo de texto pode ser criado com os detalhes que serão seguidos para que esse padrão seja mantido nas futuras manutenções).
+2. Formatação gráfica dos itens inseridos nas páginas, como campos, textos, legendas e outros, seguindo a referência criada, aplicando os conceitos de CSS aprendidos.
 </p>
