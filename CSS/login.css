@@ -35,7 +35,7 @@
 .login{
     border: 1px solid  transparent;
     border-radius: 1em;
-    padding: 0 2em;
+    padding: 0 20px;
     background-color: #fdf8e0;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .form__login{
-    width: 230px;
+    width: 260px;
     border: 1px solid transparent;
     border-radius: 0.5em;
     margin-bottom: 0.5em;
@@ -75,7 +75,7 @@
 
 .botao__entrar{
     background-color: #ff7312;
-    width: 230px;
+    width: 260px;
     border: 0px solid transparent;
     border-radius: 0.4em;
     color: #fdf8e0;
