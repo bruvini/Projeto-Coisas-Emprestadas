@@ -1,0 +1,16 @@
+@import url(/CSS/login.css);
+
+:root{
+    --cor-principal: (#ff7312);
+    --cor-secundaria: (#000000);
+    --fonte-principal: "Open Sans";
+    --cor-de-fundo: (#faaf4a);
+}
+
+body{
+    background-color: wheat;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}

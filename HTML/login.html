@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/CSS/styles.css">
     <title>Coisas Emprestadas - Login</title>
 </head>
+
 <body>
-    <h2>Realize seu login</h2>   
-    <label for="usuario">Digite seu nome de usuário:</label><br>
-    <input type="text" name="usuario" id="usuario"><br>
-    <label for="senha">Digite sua senha:</label><br>
-    <input type="password" name="senha" id="senha"><br>
-    <input type="submit" value="Entrar">
+    <header class="cabecalho">
+        <img src="/img/logo.png" alt="Logo do Projeto Coisas Emprestadas" class="logo">
+    </header>
+    <section class="principal">
+        <div class="texto">
+            <h1 class="titulo__principal">Projeto Coisas Emprestadas</h1>
+            <p class="texto__principal">
+                Este projeto foi desenvolvido pelo aluno <strong>Bruno Vinícius da Silva</strong> para a disciplina de Fundamentos de Programação Web,
+                ministrado pelo <strong>Professor Lucas Emanuel Silva E Oliveira</strong> no curso de Tecnologia em Análise e
+                Desenvolvimento de Sistemas da PUCPR.
+            </p>
+            <p class="texto__secundario">
+                Última atualização: 18/10/2022
+            </p>
+        </div>
+        <div class="login">
+            <h2 class="login__titulo">Login</h2>
+            <div class="formulario">
+                <form method="post" class="form__login">
+                    <div class="entradas">
+                        <input type="text" name="nome" id="nome" placeholder="Nome de Usuário" class="form__login">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="form__login">
+                    </div>
+                    <div class="acessorios">
+                        <label class="form__lembrar"><input type="checkbox">
+                        <span class="checkmark"></span> Lembrar meus dados
+                        </label>
+                        <a href="#" class="link__esqueceu">Esqueci meu nome de usuário</a>
+                    </div>
+                    <div class="botao">
+                        <input type="submit" value="Entrar" class="botao__entrar">
+                    </div>
+            </div>
+            </form>
+            <h2 class="cadastro">
+                Novo(a) aqui? <a href="#" class="cadastro__link">Faça seu cadastro</a>
+            </h2>
+        </div>
+
+    </section>
 </body>
+
 </html>
