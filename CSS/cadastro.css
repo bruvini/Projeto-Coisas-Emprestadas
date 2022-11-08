@@ -1,0 +1,17 @@
+.cadastrar {
+    margin: 5%;
+    border: 1px solid transparent;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .cadastrar {
+        width: 100%;
+        margin-top: 1.5em;
+        margin: 5%;
+        border: 1px solid transparent;
+        background-color: antiquewhite;
+        border-radius: 10px;
+    }
+}
