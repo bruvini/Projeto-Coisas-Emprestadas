@@ -1,195 +1,143 @@
 /*CABEÇALHO*/
+
+.cabecalho {
+    border-bottom: 0.2px solid gray;
+}
+
 .logo {
-    width: 150px;
-    margin: 1em 0 0 7em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2% 35%;
+    width: 30%;
+    height: 100%;
 }
 
-.principal {
-    display: block;
-    margin: 2em;
-}
-
-/*PARTE DE TEXTO*/
-.texto {
-    margin-top: 50px;
-}
-
+/*TÍTULO*/
 .titulo__principal {
-    color: #ff7312;
     text-align: center;
 }
 
+/*PRIMEIRO Texto*/
 .texto__principal {
-    font-size: 14px;
-    font-weight: 300;
     text-align: justify;
+    margin: 0 5px;
 }
 
+/*Texto de Atualização*/
 .texto__secundario {
-    font-size: 12px;
     text-align: center;
-    margin-bottom: 1em;
+    font-size: 0.8em;
+    border-bottom: 0.2px solid gray;
+    padding-bottom: 1em;
 }
 
-/*FORMULÁRIO*/
-.login {
-    border: 1px solid transparent;
-    border-radius: 1em;
-    padding: 0 20px;
-    background-color: #fdf8e0;
-}
-
-.login__titulo {
-    text-align: center;
-}
-
-.entradas {
-    text-align: center;
-}
-
-.form__login {
-    width: 260px;
-    border: 1px solid transparent;
-    border-radius: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.form__lembrar {
-    font-size: 10px;
-    font-weight: 600;
-    text-align: center;
-    margin-right: 10pc;
-}
-
-.link__esqueceu {
-    font-size: 10px;
-    text-decoration: none;
-    color: #ff7312;
-    font-weight: 300;
-}
-
-.botao {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.botao__entrar {
-    background-color: #ff7312;
-    width: 260px;
-    border: 0px solid transparent;
-    border-radius: 0.4em;
-    color: #fdf8e0;
-    font-weight: 700;
-    padding: 0.5em 0;
-}
-
-.botao__entrar:hover {
-    background-color: #faaf4a;
-}
-
+/*Titulo Login*/
+.login__titulo,
 .cadastro {
-    font-size: 10px;
     text-align: center;
-    margin: 0 0 2em;
+    font-size: 1em;
+    font-weight: 400;
 }
 
-.cadastro__link {
+/*formulário*/
+.login__form {
+    margin: 0 10%;
+}
+
+.login__rotulo {
+    font-weight: 700;
+    text-align: left;
+}
+
+.login__rotulo_conectado {
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+.login__input {
+    width: 100%;
+    margin: 1em 0;
+    border: 0.5px solid #ff7312;
+    border-radius: 10px;
+}
+
+.login__adicionais {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login__link-forget {
+    font-size: 0.7em;
+}
+
+a {
     text-decoration: none;
     color: #ff7312;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) {
-    .logo {
-        margin-left: 65vh;
-        width: 200px;
-    }
-
-    /*PARTE DE TEXTO*/
-    .texto {
-        margin-top: 30px;
-    }
-
-    .titulo__principal {
-        color: #ff7312;
-        text-align: center;
-    }
-
-    .texto__principal {
-        font-size: 14px;
-        font-weight: 300;
-        text-align: center;
-    }
-
-    .texto__secundario {
-        font-size: 12px;
-        text-align: center;
-        margin-bottom: 2em;
-    }
-
-    /*FORMULÁRIO*/
-    .login {
-        border: 1px solid transparent;
-        border-radius: 1em;
-        padding: 0 20px;
-        background-color: #fdf8e0;
-    }
-
-    .login__titulo {
-        text-align: center;
-    }
-
-    .entradas {
-        text-align: center;
-        width: 95%;
-
-    }
-
-    .form__login {
-        width: 890px;
-        border: 1px solid transparent;
-        border-radius: 0.5em;
-        margin-bottom: 0.5em;
-    }
-
-    .botao {
-        text-align: center;
-        margin: 20px 0;
-    }
+.login {
+    margin: 5%;
+    border: 1px solid transparent;
+    background-color: antiquewhite;
+    border-radius: 10px;
 }
 
-@media screen and (min-width: 1728px) {
+.login__enviar {
+    margin: 1.5em 0;
+    background-color: #ff7312;
+    border: 1px solid orange;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1em 0.3em;
+}
 
-    /*CABEÇALHO*/
-    .logo {
-        width: 250px;
-        margin: 1em 0 0 44em;
-    }
+.login__enviar:hover {
+    background-color: orangered;
+    color: white;
+}
 
+/*RESPONSIVIDADE PARA TABLETS*/
+@media screen and (min-width:1024px) {
     .principal {
         display: flex;
-        margin: 5em 2em;
+        justify-content: space-between;
     }
 
-    /*PARTE DE TEXTO*/
-    .texto {
-        margin-top: 30px;
-    }
-
-    .titulo__principal {
-        color: #ff7312;
+    .titulo__principal,
+    .texto__secundario {
         text-align: left;
+        padding-left: 0em;
     }
 
-    .texto__principal {
-        font-size: 14px;
-        font-weight: 300;
-        text-align: left;
+    .texto__principal{
+        text-align: justify;
+        padding-left: 0em;
     }
+
 
     .texto__secundario {
-        font-size: 12px;
-        text-align: left;
-        margin-bottom: 2em;
+        border-bottom: 0;
+    }
+
+    .texto {
+        margin-top: 10%;
+        width: 60%;
+    }
+
+    .login {
+        width: 40%;
+        margin-top: 1.5em;
+    }
+
+
+}
+
+/*RESPONSIVIDADE PARA DESKTOPS*/
+@media screen and (min-width:1728px){
+    .texto {
+        margin-top: 8%;
     }
 }

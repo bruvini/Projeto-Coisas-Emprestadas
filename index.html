@@ -16,12 +16,16 @@
 </head>
 
 <body>
+    <!-- AQUI É A PARTE QUE VAI FICAR O LOGO -->
     <header class="cabecalho">
         <img src="/img/logo.png" alt="Logo do Projeto Coisas Emprestadas" class="logo">
     </header>
+    <!-- AQUI É A PARTE QUE VAI FICAR textos -->
     <section class="principal">
         <div class="texto">
+            <!-- AQUI É A PARTE QUE VAI FICAR O título -->
             <h1 class="titulo__principal">Projeto Coisas Emprestadas</h1>
+            <!-- AQUI É A PARTE QUE VAI FICAR O texto principal -->
             <p class="texto__principal">
                 Este projeto foi desenvolvido pelo aluno <strong>Bruno Vinícius da Silva</strong> para a disciplina de
                 Fundamentos de Programação Web,
@@ -29,31 +33,36 @@
                 Análise e
                 Desenvolvimento de Sistemas da PUCPR.
             </p>
+            <!-- AQUI É A PARTE QUE VAI FICAR O texto de atualização -->
             <p class="texto__secundario">
-                Última atualização: 18/10/2022
+                Última atualização: 07/11/2022
             </p>
         </div>
         <div class="login">
-            <h2 class="login__titulo">Login</h2>
-            <div class="formulario">
-                <form method="post" class="form__login">
-                    <div class="entradas">
-                        <input type="text" name="nome" id="nome" placeholder="Nome de Usuário" class="form__login">
-                        <input type="password" name="senha" id="senha" placeholder="Senha" class="form__login">
-                        <label class="form__lembrar"><input type="checkbox">
-                            <span class="checkmark"></span> Lembrar meus dados
-                        </label>
-                        <a href="#" class="link__esqueceu">Esqueci meu nome de usuário</a>
+            <h2 class="login__titulo">Faça seu login no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
+            <form action="post">
+                <div class="login__form">
+                    <label for="mail" class="login__rotulo">E-mail</label><br>
+                    <input type="email" name="mail" id="mail" class="login__input"><br>
+                    <label for="senha" class="login__rotulo">Senha</label><br>
+                    <input type="password" name="senha" id="senha" class="login__input">
+                    <div class="login__adicionais">
+                        <div class="continuar__conectado">
+                            <input type="checkbox" name="continuar" id="continuar" class="login__checkbox">
+                            <label for="continuar" class="login__rotulo_conectado">Continuar conectado(a)</label>
+                        </div>
+                        <a href="#" class="login__link-forget">Esqueci a senha</a>
                     </div>
-                    <div class="botao">
-                        <input type="submit" value="Entrar" class="botao__entrar">
-                    </div>
-            </div>
+                    <button type="submit" class="login__enviar">Entrar</button>
+                </div>
             </form>
-            <h2 class="cadastro">
-                Novo(a) aqui? <a href="#" class="cadastro__link">Faça seu cadastro</a>
-            </h2>
-        </div>
+            <div class="cadastro__link">
+                <h3 class="cadastro">
+                    Novo(a) aqui? <br>
+                    <a href="#" class="login__link">Faça seu cadastro</a>
+                </h3>
+            </div>
+        </div>  
     </section>
 </body>
 
