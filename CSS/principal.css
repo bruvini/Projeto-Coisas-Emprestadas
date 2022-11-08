@@ -1,0 +1,13 @@
+.descricao{
+    font-weight: 100;
+    font-size: 10px;
+    margin: 2em 0;
+}
+
+.rodape__logo{
+    width: 100px;
+}
+
+.sobre__rodape{
+    font-size: 10px;
+}
