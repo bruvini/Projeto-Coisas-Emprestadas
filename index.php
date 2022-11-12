@@ -2,14 +2,14 @@
 <html lang="pt-br">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="/CSS/styles.css">
     <title>Coisas Emprestadas - Login</title>
@@ -44,16 +44,11 @@
                 <div class="login__form">
                     <label for="mail" class="login__rotulo">E-mail</label><br>
                     <input type="email" name="mail" id="mail" class="login__input"><br>
+
                     <label for="senha" class="login__rotulo">Senha</label><br>
                     <input type="password" name="senha" id="senha" class="login__input">
-                    <div class="login__adicionais">
-                        <div class="continuar__conectado">
-                            <input type="checkbox" name="continuar" id="continuar" class="login__checkbox">
-                            <label for="continuar" class="login__rotulo_conectado">Continuar conectado(a)</label>
-                        </div>
-                        <a href="#" class="login__link-forget">Esqueci a senha</a>
-                    </div>
-                    <button type="submit" class="login__enviar" >Entrar</button>
+
+                    <input type="submit" class="login__enviar" value="Entrar">
                 </div>
             </form>
             <div class="cadastro__link">
@@ -62,7 +57,7 @@
                     <a href="/cadastro.html" class="login__link">Faça seu cadastro</a>
                 </h3>
             </div>
-        </div>  
+        </div>
     </section>
 </body>
 

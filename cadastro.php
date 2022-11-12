@@ -23,7 +23,7 @@
     <section class="principal">
         <div class="cadastrar">
             <h2 class="login__titulo">Faça seu cadastro no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
-            <form action="post">
+            <form action="cadastro.php" method="POST">
                 <div class="login__form">
                     <label for="nome" class="login__rotulo">Digite seu nome completo:</label><br>
                     <input type="text" name="nome" id="nome" class="login__input">
@@ -37,7 +37,7 @@
                             <label for="termos" class="login__rotulo_conectado">Estou de acordo com os <a href="#">termos de serviço</a> e a <a href="#">política de privacidade</a> do Projeto Coisas Emprestadas</label>
                         </div>
                     </div>
-                    <button type="submit" class="login__enviar">Cadastrar</button>
+                    <input type="submit" value="Cadastrar" class="login__enviar">
                 </div>
             </form>
             <div class="cadastro__link">
