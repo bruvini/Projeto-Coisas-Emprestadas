@@ -23,7 +23,7 @@
     <section class="principal">
         <div class="cadastrar">
             <h2 class="login__titulo">Faça seu cadastro no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
-            <form action="cadastro.php" method="POST">
+            <form action="recebecadastro.php" method="post">
                 <div class="login__form">
                     <label for="nome" class="login__rotulo">Digite seu nome completo:</label><br>
                     <input type="text" name="nome" id="nome" class="login__input">

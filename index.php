@@ -40,7 +40,7 @@
         </div>
         <div class="login">
             <h2 class="login__titulo">Faça seu login no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
-            <form action="login.php" method="post">
+            <form action="recebelogin.php" method="post">
                 <div class="login__form">
                     <label for="mail" class="login__rotulo">E-mail</label><br>
                     <input type="email" name="mail" id="mail" class="login__input"><br>
@@ -54,7 +54,7 @@
             <div class="cadastro__link">
                 <h3 class="cadastro">
                     Novo(a) aqui? <br>
-                    <a href="/cadastro.html" class="login__link">Faça seu cadastro</a>
+                    <a href="/cadastro.php" class="login__link">Faça seu cadastro</a>
                 </h3>
             </div>
         </div>
