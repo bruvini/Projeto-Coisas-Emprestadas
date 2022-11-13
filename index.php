@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/login.css">
 
     <title>Coisas Emprestadas - Login</title>
 </head>

@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+
     <title>Coisas Emprestadas - Cadastro</title>
 </head>
 
