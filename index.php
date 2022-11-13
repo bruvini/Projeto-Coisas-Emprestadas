@@ -55,7 +55,7 @@
             <div class="cadastro__link">
                 <h3 class="cadastro">
                     Novo(a) aqui? <br>
-                    <a href="/cadastro.php" class="login__link">Faça seu cadastro</a>
+                    <a href="cadastro.php" class="login__link">Faça seu cadastro</a>
                 </h3>
             </div>
         </div>
