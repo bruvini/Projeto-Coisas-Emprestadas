@@ -46,17 +46,17 @@
         <div class="conteudo">
             <h2 class="titulo">EMPRÉSTIMOS</h2>
             <div class="formulario">
-                <form action="recebeitens.php" method="post">
+                <form action="realizaemprestimo.php" method="post">
                     <label for="item" class="rotulo">Selecione o item a ser emprestado</label>
                     <select name="item" id="item" class="inputs">
-                        <option value="novo">AQUI VAI A COMBOBOX COM OS ITENS CADASTRADOS</option>
+                        <option value="Produto X">Produto X</option>
                     </select>
                     <label for="usuario" class="rotulo">Selecione o usuário</label>
                     <select name="usuario" id="usuario" class="inputs">
-                        <option value="novo">AQUI VAI A COMBOBOX COM OS USUÁRIOS CADASTRADOS</option>
+                        <option value="Usuario Fulano">Usuário Fulano</option>
                     </select>
                     <label for="fone" class="rotulo">Informe o telefone de contato</label>
-                    <input type="tel" name="fone" id="fone" class="inputs">
+                    <input type="text" name="fone" id="fone" class="inputs" required>
 
                     <input type="submit" class="bt__enviar" value="REALIZAR EMPRÉSTIMO">
                 </form>

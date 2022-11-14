@@ -52,8 +52,8 @@
                     <label for="estado" class="rotulo">Estado do Item</label>
                     <select name="estado" id="estado" class="inputs">
                         <option value="novo">NOVO</option>
-                        <option value="novo">SEMI-NOVO</option>
-                        <option value="novo">USADO</option>
+                        <option value="semi-novo">SEMI-NOVO</option>
+                        <option value="usado">USADO</option>
                     </select>
                     <input type="submit" class="bt__enviar" value="CADASTRAR ITEM">
                 </form>
