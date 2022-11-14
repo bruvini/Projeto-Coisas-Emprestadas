@@ -23,26 +23,24 @@
 
 /*CORPO*/
 .corpo {
-    display: grid;
-    grid-template-columns: 30% 70%;
 }
 
 /*MENU*/
-.navegacao {
-    border-right: 1px solid #ff7312;
-    width: 100%;
-    margin: 25% 0;
-}
+.navegacao {}
 
 .lista {
-    list-style-type: none;
-    margin: 0;
+    text-align: center;
+    margin: 1em 0;
     padding: 0;
 }
 
-
 .itens {
-    padding: 1em 0 1em 2em;
+    list-style-type: none;
+    border-bottom: 1px solid #ff7312;
+    width: 80%;
+    border-width: 30%;
+    font-size: 10px;
+    padding: 3px;
 }
 
 .itens:hover {
@@ -59,10 +57,12 @@
 }
 
 .lista__link {
+    display: inline-block;
     text-decoration: none;
     font-size: 80%;
     color: #ff7312;
     font-weight: 600;
+    padding: 4px;
 }
 
 /*CONTEÚDO*/
@@ -118,14 +118,10 @@
     margin-top: 2em;
 }
 
-.rodape__conteudo {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: center;
-}
+.rodape__conteudo {}
 
 .rodape__logo {
-    width: 30%;
+    width: 10%;
     margin: auto;
     display: block;
 }
@@ -152,5 +148,89 @@
         width: 20%;
         margin-left: 2%;
         padding: 20px 0;
+    }
+
+    .corpo {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    /*MENU*/
+    .navegacao {
+        border-right: 1px solid #ff7312;
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .lista {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+
+    .itens {
+        padding: 1em;
+        border-bottom: 0;
+        list-style-type: none;
+        width: 93.5%;
+    }
+
+    .itens:hover {
+        background-color: #f9ca24;
+    }
+
+    .itens:active {
+        background-color: #f0932b;
+    }
+
+    .lista__link:hover,
+    .lista__link:active {
+        color: aliceblue;
+    }
+
+    .lista__link {
+        display: block;
+        text-decoration: none;
+        font-size: 80%;
+        color: #ff7312;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*CONTEÚDO*/
+    .conteudo {
+        text-align: center;
+    }
+
+    /*RODAPÉ*/
+
+    .rodape {
+        margin-top: 2em;
+    }
+
+    .rodape__conteudo {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-content: center;
+    }
+
+    .rodape__logo {
+        width: 30%;
+        margin: auto;
+        display: block;
+    }
+
+    .sobre__rodape {
+        font-size: 0.5em;
+        text-align: center;
+        padding: 0 3em;
+    }
+
+    .descricao {
+        text-align: center;
+        font-size: 10px;
     }
 }
