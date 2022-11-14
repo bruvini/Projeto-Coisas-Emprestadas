@@ -2,18 +2,19 @@
 
 ## Módulo 4
 
-### Descrição Geral da ATP
+### DESCRIÇÃO GERAL DA ATP: PROJETO COISAS EMPRESTADAS
 
 <p>
-    O objetivo é desenvolver um sistema web utilizando HTML, CSS, PHP e MySQL, para fazer o cadastro
-de usuários e itens emprestados e permitir o login dos usuários cadastrados, sendo pelo menos um
-deles administrador do sistema, aplicando estilos gráficos que enriqueçam sua visualização (cores,
-formas, bordas etc.).
+    O objetivo é desenvolver um sistema web utilizando HTML, CSS, PHP e MySQL, para fazer o cadastro 
+de usuários e itens emprestados e permitir o login dos usuários cadastrados, sendo pelo menos um 
+deles administrador do sistema, aplicando estilos gráficos que enriqueçam sua visualização (cores, 
+formas, bordas etc.). O projeto deve ser dinâmico, possibilitando a interação com o usuário por 
+formulários e parâmetros.
+
 </p>
 <p>
-O projeto deve ser dinâmico, possibilitando a interação com o usuário por
-formulários e parâmetros. O sistema será utilizado para informar para quem algo foi emprestado, devendo atender aos seguintes
-itens:
+O sistema será utilizado para informar para quem algo foi emprestado, devendo atender aos seguintes 
+itens
 </p>
 
 <ul>
@@ -31,14 +32,42 @@ itens:
 ### Etapa 1
 
 <p>
-1. Planejamento do modelo das páginas que serão criadas, pensando no conteúdo que será inserido em cada uma delas, para que atendam à estrutura solicitada para o projeto. O modelo pode ser desenhado de forma a organizar todos os itens que serão criados em seguida, de forma simples, com uma estrutura de organograma em um editor de textos, como o Word, para que tenhamos um mapa geral dele.</br>
-2. Criação dos arquivos e vínculos simples da estrutura, já utilizando as tags HTML para ligação e os demais conceitos aprendidos que podem fazer parte da criação das páginas.</br>
-3. Planejamento dos dados que farão parte do projeto, criando uma tabela simples no Excel para organizar os dados e seus tipos, que serão necessários nas páginas a ser criadas e posteriormente inseridos no banco de dados.
+Na etapa 1, começaremos a conhecer HTML, sua evolução histórica e suas estruturas para a criação e 
+formatação de páginas web, trabalhando com vínculos, formulários, listas e tabelas, reconhecendo as declarações HTML e aplicando os conceitos de HTML5, identificando e empregando suas respectivas 
+tags. Começaremos a elaborar páginas HTML com as corretas definições e conceitos.
 </p>
 
 ### Etapa 2
 
 <p>
-1. Organização gráfica das páginas, campos e demais itens que fazem parte do projeto, criando um padrão gráfico que será utilizado em todo ele (um arquivo de texto pode ser criado com os detalhes que serão seguidos para que esse padrão seja mantido nas futuras manutenções).</br>
-2. Formatação gráfica dos itens inseridos nas páginas, como campos, textos, legendas e outros, seguindo a referência criada, aplicando os conceitos de CSS aprendidos.
+Na etapa 2, integraremos logicamente estruturas HTML e CSS no processo de design da página web. 
+Aplicaremos a acessibilidade à página de texto em HTML5, gerando resultados mais simples, rápidos e 
+organizados dos layouts, podendo identificar e definir estilos CSS.
+</p>
+
+### Etapa 3
+
+<p>
+Na etapa 3, resolveremos problemas estruturados básicos, com estruturas de controle, mediante 
+conceitos e aspectos básicos da linguagem de programação PHP, com os tipos de dado, declaração e 
+atribuição de variáveis e constantes, operadores e funções simples.
+
+</p>
+
+### Etapa 4
+
+<p>
+Na etapa 4, trabalharemos com problemas estruturados mais complexos com estruturas de seleção e 
+repetição, utilizando comandos de seleção e repetição essenciais no desenvolvimento da lógica, além 
+de conhecer sua sintaxe, devida implementação e características, como também os operadores 
+condicionais. Faremos a criação e utilização de formulários, manipulando os dados e enviando para o 
+PHP e conhecendo seus métodos de comunicação.
+</p>
+
+### Etapa 5
+
+<p>
+Na etapa 5, resolveremos problemas com passagem de parâmetros e retornos de função, procurando 
+empregar diferentes recursos e identificar sistemas web no modelo cliente-servidor, trabalhando com 
+banco de dados e sua conexão com PHP, cookies, sessões e alguns comandos avançados do PHP.
 </p>
