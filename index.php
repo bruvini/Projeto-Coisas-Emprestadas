@@ -42,7 +42,7 @@
         </div>
         <div class="login">
             <h2 class="login__titulo">Faça seu login no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
-            <form action="recebelogin.php" method="post">
+            <form action="principal.php" method="post">
                 <div class="login__form">
                     <label for="mail" class="login__rotulo">E-mail</label><br>
                     <input type="email" name="mail" id="mail" class="login__input"><br>
