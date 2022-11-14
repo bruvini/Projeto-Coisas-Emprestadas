@@ -1,6 +1,7 @@
 @import url(CSS/login.css);
 @import url(CSS/principal.css);
 @import url(CSS/cadastro.css);
+@import url(CSS/caditens.css);
 
 :root{
     --cor-principal: (#ff7312);
