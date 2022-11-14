@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/caditens.css">
-    <title>Coisas Emprestadas - Cadastrar itens</title>
+    <link rel="stylesheet" href="CSS/emprestar.css">
+    <title>Coisas Emprestadas - Empréstimo</title>
 </head>
 
 <body>
@@ -45,18 +45,21 @@
             </ul>
         </nav>
         <div class="conteudo">
-            <h2 class="titulo">CADASTRO DE ITENS</h2>
+            <h2 class="titulo">EMPRÉSTIMOS</h2>
             <div class="formulario">
                 <form action="recebeitens.php" method="post">
-                    <label for="nome" class="rotulo">Nome do Item</label>
-                    <input type="text" name="nome" id="nome" class="inputs">
-                    <label for="estado" class="rotulo">Estado do Item</label>
-                    <select name="estado" id="estado" class="inputs">
-                        <option value="novo">NOVO</option>
-                        <option value="novo">SEMI-NOVO</option>
-                        <option value="novo">USADO</option>
+                    <label for="item" class="rotulo">Selecione o item a ser emprestado</label>
+                    <select name="item" id="item" class="inputs">
+                        <option value="novo">AQUI VAI A COMBOBOX COM OS ITENS CADASTRADOS</option>
                     </select>
-                    <input type="submit" class="bt__enviar" value="CADASTRAR ITEM">
+                    <label for="usuario" class="rotulo">Selecione o usuário</label>
+                    <select name="usuario" id="usuario" class="inputs">
+                        <option value="novo">AQUI VAI A COMBOBOX COM OS USUÁRIOS CADASTRADOS</option>
+                    </select>
+                    <label for="fone" class="rotulo">Informe o telefone de contato</label>
+                    <input type="tel" name="fone" id="fone" class="inputs">
+                    
+                    <input type="submit" class="bt__enviar" value="REALIZAR EMPRÉSTIMO">
                 </form>
             </div>
         </div>
