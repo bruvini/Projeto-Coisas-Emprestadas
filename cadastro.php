@@ -33,10 +33,17 @@
                     <label for="mail" class="login__rotulo">Insira seu e-mail:</label>
                     <input type="email" name="mail" id="mail" class="login__input">
                     <label for="senha" class="login__rotulo">Crie uma senha:</label>
-                    <input type="password" name="senha" id="senha" class="login__input">
+                    <input type="password" name="senha" id="senha" minlength="8" required autocomplete="on" class="login__input">
+
+                    <p class="dica">
+                    <ul class="dicas">
+                        <li class="dicas__itens">No mínimo 8 caracteres.</li>
+                    </ul>
+                    </p>
+
                     <div class="login__adicionais">
                         <div class="continuar__conectado">
-                            <input type="checkbox" name="termos" id="termos" class="login__checkbox">
+                            <input type="checkbox" name="termos" id="termos" class="login__checkbox" required>
                             <label for="termos" class="login__rotulo_conectado">Estou de acordo com os <a href="#">termos de serviço</a> e a <a href="#">política de privacidade</a> do Projeto Coisas Emprestadas</label>
                         </div>
                     </div>

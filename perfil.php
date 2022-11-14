@@ -60,15 +60,11 @@
                     <input type="password" name="senhaatual" id="senhaatual" class="inputs">
 
                     <label for="novasenha" class="rotulo">Nova Senha</label>
-                    <input type="password" name="novasenha" id="novasenha" class="inputs">
+                    <input type="password" name="novasenha" id="novasenha" class="inputs" minlength="8" required autocomplete="on">
 
                     <p class="dica">
                     <ul class="dicas">
                         <li class="dicas__itens">No mínimo 8 caracteres.</li>
-                        <li class="dicas__itens">Pelo menos um número.</li>
-                        <li class="dicas__itens">Pelo menos um caractere minúsculo.</li>
-                        <li class="dicas__itens">Pelo menos um caractere maiúsculo.</li>
-                        <li class="dicas__itens">Pelo menos um caractere especial (!@#&()-[{}]:;',"?/*~$^+=<>._`|%).</li>
                     </ul>
                     </p>
 

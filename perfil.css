@@ -127,6 +127,10 @@
     color: white;
 }
 
+.dicas{
+    text-align: left;
+}
+
 .dicas__itens{
     font-size: 10px;
     list-style-type:"\1F44D";
