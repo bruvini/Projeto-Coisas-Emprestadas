@@ -8,12 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/emprestar.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="emprestar.css">
     <title>Coisas Emprestadas - Empréstimo</title>
 </head>
 
@@ -30,16 +29,16 @@
     <span class="corpo">
         <nav class="navegacao">
             <ul class="lista lista__selecionado">
-                <a href="perfil.html" class="lista__link">
+                <a href="perfil.php" class="lista__link">
                     <li class="itens">Meu Perfil</li>
                 </a>
-                <a href="itens.html" class="lista__link">
+                <a href="itens.php" class="lista__link">
                     <li class="itens">Cadastrar Itens</li>
                 </a>
-                <a href="emprestar.html" class="lista__link">
+                <a href="emprestar.php" class="lista__link">
                     <li class="itens">Realizar Empréstimos</li>
                 </a>
-                <a href="relatorio.html" class="lista__link">
+                <a href="relatorio.php" class="lista__link">
                     <li class="itens">Relatórios</li>
                 </a>
             </ul>
@@ -58,7 +57,7 @@
                     </select>
                     <label for="fone" class="rotulo">Informe o telefone de contato</label>
                     <input type="tel" name="fone" id="fone" class="inputs">
-                    
+
                     <input type="submit" class="bt__enviar" value="REALIZAR EMPRÉSTIMO">
                 </form>
             </div>
@@ -67,7 +66,7 @@
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <img src="/img/logo_sem_letra.png" alt="logo" class="rodape__logo">
+            <img src="img/logo_sem_letra.png" alt="logo" class="rodape__logo">
             <p class="sobre__rodape">
                 o Projeto Coisas Emprestadas é uma empresa fictícia nascida e criada na internet como parte da
                 disciplina de Fundamentos da Programação Web.<br>

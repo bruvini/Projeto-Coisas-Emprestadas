@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/login.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
 
     <title>Coisas Emprestadas - Login</title>
 </head>
@@ -42,7 +43,7 @@
         </div>
         <div class="login">
             <h2 class="login__titulo">Faça seu login no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
-            <form action="principal.html" method="post">
+            <form action="principal.php" method="post">
                 <div class="login__form">
                     <label for="mail" class="login__rotulo">E-mail</label><br>
                     <input type="email" name="mail" id="mail" class="login__input"><br>
@@ -56,7 +57,7 @@
             <div class="cadastro__link">
                 <h3 class="cadastro">
                     Novo(a) aqui? <br>
-                    <a href="cadastro.html" class="login__link">Faça seu cadastro</a>
+                    <a href="cadastro.php" class="login__link">Faça seu cadastro</a>
                 </h3>
             </div>
         </div>

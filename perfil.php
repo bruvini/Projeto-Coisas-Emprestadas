@@ -8,12 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="perfil.css">
     <title>Coisas Emprestadas - Meu Perfil</title>
 </head>
 
@@ -30,16 +29,16 @@
     <span class="corpo">
         <nav class="navegacao">
             <ul class="lista lista__selecionado">
-                <a href="perfil.html" class="lista__link">
+                <a href="perfil.php" class="lista__link">
                     <li class="itens">Meu Perfil</li>
                 </a>
-                <a href="itens.html" class="lista__link">
+                <a href="itens.php" class="lista__link">
                     <li class="itens">Cadastrar Itens</li>
                 </a>
-                <a href="emprestar.html" class="lista__link">
+                <a href="emprestar.php" class="lista__link">
                     <li class="itens">Realizar Empréstimos</li>
                 </a>
-                <a href="relatorio.html" class="lista__link">
+                <a href="relatorio.php" class="lista__link">
                     <li class="itens">Relatórios</li>
                 </a>
             </ul>
@@ -50,7 +49,7 @@
                 <h3 class="titulo__principal">
                     Dados Gerais
                 </h3>
-                <img src="/img/icone.png" alt="icone da foto de perfil" class="perfil">
+                <img src="img/icone.png" alt="icone da foto de perfil" class="perfil">
                 <form action="recebeitens.php" method="post" class="usuario">
                     <label for="nome" class="rotulo">Nome Completo</label>
                     <input type="text" name="nome" id="nome" class="inputs">
@@ -64,13 +63,13 @@
                     <input type="password" name="novasenha" id="novasenha" class="inputs">
 
                     <p class="dica">
-                        <ul class="dicas">
-                            <li class="dicas__itens">No mínimo 8 caracteres.</li>
-                            <li class="dicas__itens">Pelo menos um número.</li>
-                            <li class="dicas__itens">Pelo menos um caractere minúsculo.</li>
-                            <li class="dicas__itens">Pelo menos um caractere maiúsculo.</li>
-                            <li class="dicas__itens">Pelo menos um caractere especial (!@#&()-[{}]:;',"?/*~$^+=<>._`|%).</li>
-                        </ul>
+                    <ul class="dicas">
+                        <li class="dicas__itens">No mínimo 8 caracteres.</li>
+                        <li class="dicas__itens">Pelo menos um número.</li>
+                        <li class="dicas__itens">Pelo menos um caractere minúsculo.</li>
+                        <li class="dicas__itens">Pelo menos um caractere maiúsculo.</li>
+                        <li class="dicas__itens">Pelo menos um caractere especial (!@#&()-[{}]:;',"?/*~$^+=<>._`|%).</li>
+                    </ul>
                     </p>
 
                     <input type="submit" class="bt__enviar" value="SALVAR ALTERAÇÕES">
@@ -81,7 +80,7 @@
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <img src="/img/logo_sem_letra.png" alt="logo" class="rodape__logo">
+            <img src="img/logo_sem_letra.png" alt="logo" class="rodape__logo">
             <p class="sobre__rodape">
                 o Projeto Coisas Emprestadas é uma empresa fictícia nascida e criada na internet como parte da
                 disciplina de Fundamentos da Programação Web.<br>

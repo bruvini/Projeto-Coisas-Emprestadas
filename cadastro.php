@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/cadastro.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro.css">
 
     <title>Coisas Emprestadas - Cadastro</title>
 </head>
@@ -45,7 +46,7 @@
             <div class="cadastro__link">
                 <h3 class="cadastro">
                     Já tem seu cadastro? <br>
-                    <a href="index.html" class="login__link">Volte para a página inicial</a>
+                    <a href="index.php" class="login__link">Volte para a página inicial</a>
                 </h3>
             </div>
         </div>  
