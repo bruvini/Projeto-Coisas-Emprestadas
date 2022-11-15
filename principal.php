@@ -46,7 +46,85 @@
             </ul>
         </nav>
         <div class="conteudo">
-            <p>itens emprestados</p>
+            <h3 class="titulo">Empréstimos</h3>
+            <div class="principal__tabela">
+            <table class="tabela">
+                <tr class="linha__tabela">
+                    <th class="cabecalho__tabela">Item Emprestado</th>
+                    <th class="cabecalho__tabela">Nome do Usuário</th>
+                    <th class="cabecalho__tabela">Telefone</th>
+                    <th class="cabecalho__tabela">Data de Empréstimo</th>
+                    <th class="cabecalho__tabela">Data de Devolução</th>
+                </tr>
+            </table>
+            <?php
+                require_once 'dbcon.php';
+
+                $i = 0;
+                $sql = "SELECT * from emprestimo";
+                $query = mysqli_query($conn, $sql);
+                while($reg = mysqli_fetch_array($query)) {
+                    $prod = $reg['nomeProd'];
+                    $user = $reg['nomeUser'];
+                    $fone = $reg['fone'];
+                    $emprestimo = $reg['dataEmprestimo'];
+                    $devolucao = $reg['dataDevolucao'];
+
+                    $arProd[$i] = $prod;
+                    $arUser[$i] = $user;
+                    $arFone[$i] = $fone;
+                    $arEmprestimo[$i] = $emprestimo;
+                    $arDevolucao[$i] = $devolucao;
+
+                    $i++;
+                }
+
+                $k = $i;
+                for ($i=0; $i < $k; $i++) {
+                    echo "
+                    <table class='tabela'>
+                        <tr class='linha__tabela'>
+                            <td class='dados__tabela-produto'>
+                                ".$arProd[$i]."
+                            </td>
+                            <td class='dados__tabela-usuario'>
+                                ".$arUser[$i]."
+                            </td>
+                            <td class='dados__tabela-fone'>
+                                ".$arFone[$i]."
+                            </td>
+                            <td class='dados__tabela-empr'>
+                                ".$arEmprestimo[$i]."
+                            </td>
+                            <td class='dados__tabela-dev'>
+                                ".$arDevolucao[$i]."
+                            </td>
+                        </tr>
+                    </table>
+                    ";
+                }
+            ?>
+            </div>
+
+            <!--
+            <table class="tabela">
+                <tr class="linha__tabela">
+                    <th class="cabecalho__tabela">Item Emprestado</th>
+                    <th class="cabecalho__tabela">Nome do Usuário</th>
+                    <th class="cabecalho__tabela">Telefone</th>
+                    <th class="cabecalho__tabela">Data de Empréstimo</th>
+                    <th class="cabecalho__tabela">Data de Devolução</th>
+                </tr>
+                <tr class="linha__tabela">
+                    <td class="dados__tabela">Item Tal</td>
+                    <td class="dados__tabela">Fulano Tal</td>
+                    <td class="dados__tabela">Telefone Tal</td>
+                    <td class="dados__tabela">Data Tal</td>
+                    <td class="dados__tabela">Entrega Tal</td>
+                </tr>
+            </table>
+            -->
+
         </div>
     </span>
 
