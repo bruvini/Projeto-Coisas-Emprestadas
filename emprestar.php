@@ -54,9 +54,19 @@
                     <select name="item" id="item" class="inputs">
                         <option value="Produto X">Produto X</option>
                     </select>
-                    <label for="usuario" class="rotulo">Selecione o usuário</label>
-                    <select name="usuario" id="usuario" class="inputs">
-                        <option value="Usuario Fulano">Usuário Fulano</option>
+                    <label for="user" class="rotulo">Selecione o usuário</label>
+                    <select name="user" id="user" class="inputs">
+
+                        <?php
+                        include_once 'dbcon.php';
+                        $query = mysqli_query($conn, "SELECT * FROM tbUsuarios");
+                        while ($result = mysqli_fetch_array($query)) {
+                            $valor = $result['nomeUser'];
+                            echo ("<option value=".$valor.">".$valor."</option>");
+                        }
+                        mysqli_close($conn);
+                        ?>
+
                     </select>
                     <label for="fone" class="rotulo">Informe o telefone de contato</label>
                     <input type="text" name="fone" id="fone" class="inputs" required>

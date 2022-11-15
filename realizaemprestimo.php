@@ -17,9 +17,13 @@
 
     echo "REGISTRO DE EMPRÉSTIMOS <br><br>";
     
-    echo "Está sendo realizado o empréstimo de ".$_POST["item"]. " para o usuário chamado ".$_POST["usuario"]. " na data de ". $hoje. "<br><br>";
+    echo 
+    "Item emprestado: ".$_POST["item"]."<br>";
+    echo
+    "Emprestado para: ".$_POST["user"]."<br>";
+    echo
+    "Data do empréstimo: ".$hoje."<br><br>";
 
+    echo "A data prevista para devolução é para ". $devolucao. ". Em caso de não devolução, contatar ".$_POST["user"]. " pelo telefone " . formataTelefone($_POST["fone"]).".";
 
-
-    echo "A data prevista para devolução é para ". $devolucao. ". Em caso de não devolução, contatar ".$_POST["usuario"]. " pelo telefone " . formataTelefone($_POST["fone"]).".";
 ?>
