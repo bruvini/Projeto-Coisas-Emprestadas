@@ -29,6 +29,9 @@
     <span class="corpo">
         <nav class="navegacao">
             <ul class="lista lista__selecionado">
+                <a href="principal.php" class="lista__link">
+                    <li class="itens">Início</li>
+                </a>
                 <a href="perfil.php" class="lista__link">
                     <li class="itens">Meu Perfil</li>
                 </a>

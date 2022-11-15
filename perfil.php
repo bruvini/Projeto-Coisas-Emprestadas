@@ -29,6 +29,9 @@
     <span class="corpo">
         <nav class="navegacao">
             <ul class="lista lista__selecionado">
+                <a href="principal.php" class="lista__link">
+                    <li class="itens">Início</li>
+                </a>
                 <a href="perfil.php" class="lista__link">
                     <li class="itens">Meu Perfil</li>
                 </a>
@@ -49,7 +52,7 @@
                 <h3 class="titulo__principal">
                     Dados Gerais
                 </h3>
-                <img src="img/icone.png" alt="icone da foto de perfil" class="perfil">
+                <img src="img/feminino.png" alt="icone da foto de perfil" class="perfil">
                 <form action="recebeperfil.php" method="post" class="usuario">
                     <label for="nome" class="rotulo">Nome Completo</label>
                     <input type="text" name="nome" id="nome" class="inputs">
