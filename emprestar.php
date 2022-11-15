@@ -52,7 +52,16 @@
                 <form action="realizaemprestimo.php" method="post">
                     <label for="item" class="rotulo">Selecione o item a ser emprestado</label>
                     <select name="item" id="item" class="inputs">
-                        <option value="Produto X">Produto X</option>
+                        
+                    <?php
+                        include_once 'dbcon.php';
+                        $query = mysqli_query($conn, "SELECT * FROM cadastroProdutos");
+                        while ($result = mysqli_fetch_array($query)) {
+                            $valor = $result['nomeProd'];
+                            echo ("<option value=".$valor.">".$valor."</option>");
+                        }
+                    ?>
+
                     </select>
                     <label for="user" class="rotulo">Selecione o usuário</label>
                     <select name="user" id="user" class="inputs">
@@ -64,7 +73,6 @@
                             $valor = $result['nomeUser'];
                             echo ("<option value=".$valor.">".$valor."</option>");
                         }
-                        mysqli_close($conn);
                         ?>
 
                     </select>

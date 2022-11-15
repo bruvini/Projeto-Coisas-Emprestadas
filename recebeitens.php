@@ -1,4 +1,5 @@
 <?php 
+    /*
     echo "NOVO ITEM CADASTRADO NO PROJETO COISAS EMPRESTADAS" . "<br><br>";
 
     echo "Nome do item: ".$_POST["nome"]."<br>";
@@ -12,4 +13,19 @@
             break;
         default:
             echo "Poderia cadastrar um produto melhor, né?";
-    }
+        */
+        
+include_once 'dbcon.php';
+
+//variáveis do formulário de cadastro
+$item = $_POST["nome"];
+$estado = $_POST["estado"];
+
+$sql = "INSERT INTO cadastroProdutos (nomeProd, estadoProd) VALUES ('$item','$estado')";
+
+if (mysqli_query($conn, $sql)) {
+    echo "Novo registro adicionado";
+}else {
+    echo "Erro: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);

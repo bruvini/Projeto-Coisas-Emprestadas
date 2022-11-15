@@ -32,11 +32,13 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
     
 //Utilização de sessão
+/*
 session_start();
 $_SESSION["nome"] = $_POST["nome"];
 $_SESSION["mail"] = $_POST["mail"];
 $_SESSION["senha"] = $_POST["senha"];
 $_SESSION["sexo"] = $_POST["sexo"];
+*/
 ?>
 
 <a href="principal.php"><button>Entrar no site</button></a>
