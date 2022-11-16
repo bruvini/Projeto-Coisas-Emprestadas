@@ -106,25 +106,6 @@
             ?>
             </div>
 
-            <!--
-            <table class="tabela">
-                <tr class="linha__tabela">
-                    <th class="cabecalho__tabela">Item Emprestado</th>
-                    <th class="cabecalho__tabela">Nome do Usuário</th>
-                    <th class="cabecalho__tabela">Telefone</th>
-                    <th class="cabecalho__tabela">Data de Empréstimo</th>
-                    <th class="cabecalho__tabela">Data de Devolução</th>
-                </tr>
-                <tr class="linha__tabela">
-                    <td class="dados__tabela">Item Tal</td>
-                    <td class="dados__tabela">Fulano Tal</td>
-                    <td class="dados__tabela">Telefone Tal</td>
-                    <td class="dados__tabela">Data Tal</td>
-                    <td class="dados__tabela">Entrega Tal</td>
-                </tr>
-            </table>
-            -->
-
         </div>
     </span>
 
