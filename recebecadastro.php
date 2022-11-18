@@ -25,9 +25,9 @@ $sexo = $_POST["sexo"];
 $sql = "INSERT INTO tbUsuarios (nomeUser, mailUser, senhaUser, sexoUser) VALUES ('$nome','$mail','$senha','$sexo')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Novo registro adicionado";
+    header("Location: index.php");
 }else {
-    echo "Erro: " . $sql . "<br>" . mysqli_error($conn);
+    header("Location: cadastro.php");
 }
 mysqli_close($conn);
     
@@ -40,5 +40,3 @@ $_SESSION["senha"] = $_POST["senha"];
 $_SESSION["sexo"] = $_POST["sexo"];
 */
 ?>
-
-<a href="principal.php"><button>Entrar no site</button></a>

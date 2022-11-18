@@ -2,24 +2,25 @@ create database CEmp;
 use CEmp;
 
 create table tbUsuarios (
-nomeUser varchar(50) primary key not null,
+idUser int primary key auto_increment,
+nomeUser varchar(50) not null,
 mailUser varchar(50) not null unique,
 senhaUser varchar (50) not null,
 sexoUser varchar(10)
 );
 
-delete from tbUsuarios where senhaUser = '.admin123.';
-select mailUser from tbUsuarios where mailUser = "bruvini.silva12@gmail.com";
 select * from tbUsuarios;
 select * from emprestimo;
 select * from cadastroProdutos;
 
 create table cadastroProdutos(
-nomeProd varchar(50) primary key not null,
+idProd int primary key auto_increment,
+nomeProd varchar(50) not null,
 estadoProd varchar(9) not null
 );
 
-drop table emprestimo;
+drop table tbUsuarios;
+
 create table emprestimo(
 idEmprestimo int primary key auto_increment,
 nomeProd varchar(50) not null,

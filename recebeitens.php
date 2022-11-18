@@ -24,8 +24,8 @@ $estado = $_POST["estado"];
 $sql = "INSERT INTO cadastroProdutos (nomeProd, estadoProd) VALUES ('$item','$estado')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Novo registro adicionado";
+    header("Location: itens.php");
 }else {
-    echo "Erro: " . $sql . "<br>" . mysqli_error($conn);
+    echo "erro";
 }
 mysqli_close($conn);

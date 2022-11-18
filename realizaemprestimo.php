@@ -42,8 +42,8 @@ $devolucao;
 $sql = "INSERT INTO emprestimo (nomeProd, nomeUser, fone, dataDevolucao) VALUES ('$item','$usuario','$fone','$devolucao')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Novo registro adicionado";
+    header("Location: principal.php");
 }else {
-    echo "Erro: " . $sql . "<br>" . mysqli_error($conn);
+    header("Location: emprestar.php");
 }
 mysqli_close($conn);
