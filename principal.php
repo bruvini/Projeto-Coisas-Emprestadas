@@ -48,63 +48,39 @@
         <div class="conteudo">
             <h3 class="titulo">Empréstimos</h3>
             <div class="principal__tabela">
-            <table class="tabela">
-                <tr class="linha__tabela">
-                    <th class="cabecalho__tabela">Item Emprestado</th>
-                    <th class="cabecalho__tabela">Nome do Usuário</th>
-                    <th class="cabecalho__tabela">Telefone</th>
-                    <th class="cabecalho__tabela">Data de Empréstimo</th>
-                    <th class="cabecalho__tabela">Data de Devolução</th>
-                </tr>
-            </table>
-            <?php
-                require_once 'dbcon.php';
+                <table class="tabela">
+                    <tr class="linha__tabela">
+                        <td class="linha__tabela">Registro Nº.</td>
+                        <td class="linha__tabela">Item Emprestado</td>
+                        <td class="linha__tabela">Nome do Usuário</td>
+                        <td class="linha__tabela">Telefone</td>
+                        <td class="linha__tabela">Data do Empréstimo</td>
+                        <td class="linha__tabela">Data para Devolução</td>
+                    </tr>
+                    <?php
+                    require_once 'dbcon.php';
 
-                $i = 0;
-                $sql = "SELECT * from emprestimo";
-                $query = mysqli_query($conn, $sql);
-                while($reg = mysqli_fetch_array($query)) {
-                    $prod = $reg['nomeProd'];
-                    $user = $reg['nomeUser'];
-                    $fone = $reg['fone'];
-                    $emprestimo = $reg['dataEmprestimo'];
-                    $devolucao = $reg['dataDevolucao'];
+                    $sql = "SELECT idEmprestimo, nomeProd, nomeUser, fone, dataEmprestimo, dataDevolucao FROM emprestimo";
+                    $res = mysqli_query($conn, $sql);
 
-                    $arProd[$i] = $prod;
-                    $arUser[$i] = $user;
-                    $arFone[$i] = $fone;
-                    $arEmprestimo[$i] = $emprestimo;
-                    $arDevolucao[$i] = $devolucao;
-
-                    $i++;
-                }
-
-                $k = $i;
-                for ($i=0; $i < $k; $i++) {
-                    echo "
-                    <table class='tabela'>
-                        <tr class='linha__tabela'>
-                            <td class='dados__tabela-produto'>
-                                ".$arProd[$i]."
-                            </td>
-                            <td class='dados__tabela-usuario'>
-                                ".$arUser[$i]."
-                            </td>
-                            <td class='dados__tabela-fone'>
-                                ".$arFone[$i]."
-                            </td>
-                            <td class='dados__tabela-empr'>
-                                ".$arEmprestimo[$i]."
-                            </td>
-                            <td class='dados__tabela-dev'>
-                                ".$arDevolucao[$i]."
-                            </td>
-                        </tr>
-                    </table>
-                    ";
-                }
-            ?>
+                    if ($res) {
+                        while ($row = mysqli_fetch_assoc($res)) {
+                            echo "
+                            <tr class='linha__tabela'>
+                            <td class='linha__tabela'>".$row['idEmprestimo']."</td>
+                            <td class='linha__tabela'>".$row['nomeProd']."</td>
+                            <td class='linha__tabela'>".$row['nomeUser']."</td>
+                            <td class='linha__tabela'>".$row['fone']."</td>
+                            <td class='linha__tabela'>".$row['dataEmprestimo']."</td>
+                            <td class='linha__tabela'>".$row['dataDevolucao']."</td>
+                        </tr>";
+                        }
+                    }
+                    ?>
+                </table>
             </div>
+
+            <a href="emprestar.php" class="novoemp">REALIZAR NOVO EMPRÉSTIMO</a>
 
         </div>
     </span>

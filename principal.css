@@ -69,7 +69,7 @@
     text-align: center;
 }
 
-.titulo{
+.titulo {
     font-size: 100%;
     text-align: center;
 }
@@ -172,34 +172,37 @@
 
     /*TABELA*/
 
-    .principal__tabela{
+    .principal__tabela {
         margin: 20px;
     }
 
-    .tabela{
-        
+    .tabela {
+
         width: 100%;
         border-collapse: collapse;
         background-color: antiquewhite;
     }
 
-    td, .cabecalho__tabela{
-        
+    td,
+    .cabecalho__tabela {
+
         border: 1px solid #ff7312;
         padding: 5px 0;
         font-size: 12px;
         width: 100px;
     }
 
-    .dados__tabela-produto{
+    .dados__tabela-produto {
         font-weight: 600;
     }
 
-    .linha__tabela:hover{
+    .linha__tabela:hover {
         background-color: #f9ca24;
         color: aliceblue;
         font-weight: 700;
     }
+
+    
 
     /*RODAPÉ*/
 
@@ -229,5 +232,4 @@
         text-align: center;
         font-size: 10px;
     }
-
 }
