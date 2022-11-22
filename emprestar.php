@@ -28,12 +28,12 @@
 
     <span class="corpo">
         <nav class="navegacao">
-            <ul class="lista lista__selecionado">
+        <ul class="lista">
                 <a href="principal.php" class="lista__link">
                     <li class="itens">Início</li>
                 </a>
-                <a href="perfil.php" class="lista__link">
-                    <li class="itens">Meu Perfil</li>
+                <a href="listacadastro.php" class="lista__link">
+                    <li class="itens">Lista de Usuários</li>
                 </a>
                 <a href="itens.php" class="lista__link">
                     <li class="itens">Cadastrar Itens</li>
@@ -76,8 +76,6 @@
                         ?>
 
                     </select>
-                    <label for="fone" class="rotulo">Informe o telefone de contato</label>
-                    <input type="text" name="fone" id="fone" class="inputs" required>
 
                     <input type="submit" class="bt__enviar" value="REALIZAR EMPRÉSTIMO">
                 </form>

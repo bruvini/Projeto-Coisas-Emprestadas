@@ -1,3 +1,27 @@
+<?php
+include_once 'dbcon.php';
+
+$id = "";
+$nome = "";
+$mail = "";
+$fone = "".
+$sexo = "";
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM tbUsuarios WHERE idUser = $id";
+    $res = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($res);
+
+    $id = $row['idUser'];
+    $nome = $row['nomeUser'];
+    $mail = $row['mailUser'];
+    $fone = $row['foneUser'];
+    $sexo = $row['sexoUser'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,12 +52,12 @@
 
     <span class="corpo">
         <nav class="navegacao">
-            <ul class="lista lista__selecionado">
+            <ul class="lista">
                 <a href="principal.php" class="lista__link">
                     <li class="itens">Início</li>
                 </a>
-                <a href="perfil.php" class="lista__link">
-                    <li class="itens">Meu Perfil</li>
+                <a href="listacadastro.php" class="lista__link">
+                    <li class="itens">Lista de Usuários</li>
                 </a>
                 <a href="itens.php" class="lista__link">
                     <li class="itens">Cadastrar Itens</li>
@@ -52,24 +76,26 @@
                 <h3 class="titulo__principal">
                     Dados Gerais
                 </h3>
-                <img src="img/feminino.png" alt="icone da foto de perfil" class="perfil">
-                <form action="recebeperfil.php" method="post" class="usuario">
+                <form action="recebecadastro.php" method="post" class="usuario">
+
+                    <input type="hidden" name="id" class="inputs" value="<?php echo $id?>">
+
                     <label for="nome" class="rotulo">Nome Completo</label>
-                    <input type="text" name="nome" id="nome" class="inputs">
+                    <input type="text" name="nome" id="nome" class="inputs" value="<?php echo $nome?>">
+
                     <label for="mail" class="rotulo">Seu e-mail</label>
-                    <input type="email" name="mail" id="mail" class="inputs">
+                    <input type="email" name="mail" id="mail" class="inputs" value="<?php echo $mail?>">
 
-                    <label for="senhaatual" class="rotulo">Senha Atual</label>
-                    <input type="password" name="senhaatual" id="senhaatual" class="inputs">
+                    <label for="fone" class="rotulo">Seu telefone</label>
+                    <input type="tel" name="fone" id="fone" class="inputs" value="<?php echo $fone?>">
 
-                    <label for="novasenha" class="rotulo">Nova Senha</label>
-                    <input type="password" name="novasenha" id="novasenha" class="inputs" minlength="8" required autocomplete="on">
-
-                    <p class="dica">
-                    <ul class="dicas">
-                        <li class="dicas__itens">No mínimo 8 caracteres.</li>
-                    </ul>
-                    </p>
+                    <label for="sexo" class="rotulo">Gênero</label>
+                    <select name="sexo" class="inputs">
+                        <option value="select">SELECIONE</option>
+                        <option value="M" <?php if ($sexo == "M") {echo "selected";}?>>Masculino</option>
+                        <option value="F"<?php if ($sexo == "F") {echo "selected";}?>>Feminino</option>
+                        <option value="O" <?php if ($sexo == "O") {echo "selected";}?>>Outro</option>
+                    </select>
 
                     <input type="submit" class="bt__enviar" value="SALVAR ALTERAÇÕES">
                 </form>

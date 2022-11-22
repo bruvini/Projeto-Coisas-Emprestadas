@@ -14,23 +14,30 @@ include_once 'dbcon.php';
 */
 
 //variáveis do formulário de cadastro
+$id = $_POST["id"];
 $nome = $_POST["nome"];
 $mail = $_POST["mail"];
+$fone = $_POST["fone"];
 $senha = $_POST["senha"];
 $sexo = $_POST["sexo"];
 
 //a conexão com o banco de dados foi realizada no arquivo dbcon.php com a variável $conn
 
-//inserindo no banco de dados
-$sql = "INSERT INTO tbUsuarios (nomeUser, mailUser, senhaUser, sexoUser) VALUES ('$nome','$mail','$senha','$sexo')";
-
-if (mysqli_query($conn, $sql)) {
-    header("Location: index.php");
+if (empty($id)) {
+    $sql = "INSERT INTO tbUsuarios (nomeUser, mailUser, foneUser, senhaUser, sexoUser) VALUES ('$nome','$mail','$fone','$senha','$sexo')";
+    $res = mysqli_query($conn, $sql);
+    if ($res) {
+        header("Location: index.php");
+    }
 }else {
-    header("Location: cadastro.php");
+    $sql = "UPDATE tbUsuarios SET nomeUser = '$nome', mailUser = '$mail', foneUser = '$fone', sexoUser = '$sexo' WHERE idUser = '$id'";
+    $res = mysqli_query($conn, $sql);
+    if ($res) {
+        header("Location: listacadastro.php");
+    }
 }
-mysqli_close($conn);
-    
+
+
 //Utilização de sessão
 /*
 session_start();
@@ -39,4 +46,3 @@ $_SESSION["mail"] = $_POST["mail"];
 $_SESSION["senha"] = $_POST["senha"];
 $_SESSION["sexo"] = $_POST["sexo"];
 */
-?>

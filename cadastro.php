@@ -30,14 +30,16 @@
                 <div>
                     <label for="nome" class="login__rotulo">Digite seu nome completo:</label>
                     <input type="text" name="nome" id="nome" class="login__input">
+                    <label for="mail" class="login__rotulo">Insira seu e-mail:</label>
+                    <input type="email" name="mail" id="mail" class="login__input">
+                    <label for="fone" class="rotulo">Seu telefone</label>
+                    <input type="tel" name="fone" id="fone" class="login__input">
                     <label for="sexo" class="login__rotulo">Selecione o sexo:</label>
                     <select name="sexo" id="sexo" class="login__input">
                         <option value="M">Masculino</option>
                         <option value="F">Feminino</option>
                         <option value="O">Outro</option>
                     </select>
-                    <label for="mail" class="login__rotulo">Insira seu e-mail:</label>
-                    <input type="email" name="mail" id="mail" class="login__input">
                     <label for="senha" class="login__rotulo">Crie uma senha:</label>
                     <input type="password" name="senha" id="senha" minlength="8" required autocomplete="on" class="login__input">
 

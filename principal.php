@@ -27,12 +27,12 @@
 
     <span class="corpo">
         <nav class="navegacao">
-            <ul class="lista">
+        <ul class="lista">
                 <a href="principal.php" class="lista__link">
                     <li class="itens">Início</li>
                 </a>
-                <a href="perfil.php" class="lista__link">
-                    <li class="itens">Meu Perfil</li>
+                <a href="listacadastro.php" class="lista__link">
+                    <li class="itens">Lista de Usuários</li>
                 </a>
                 <a href="itens.php" class="lista__link">
                     <li class="itens">Cadastrar Itens</li>
@@ -56,6 +56,7 @@
                         <td class="linha__tabela">Telefone</td>
                         <td class="linha__tabela">Data do Empréstimo</td>
                         <td class="linha__tabela">Data para Devolução</td>
+                        <td class="linha__tabela">EXCLUIR</td>
                     </tr>
                     <?php
                     require_once 'dbcon.php';
@@ -73,13 +74,14 @@
                             <td class='linha__tabela'>".$row['fone']."</td>
                             <td class='linha__tabela'>".$row['dataEmprestimo']."</td>
                             <td class='linha__tabela'>".$row['dataDevolucao']."</td>
+                            <td class='linha__tabela'><a href='excluiemprestimo.php?id=".$row['idEmprestimo']. "'><img src='img/trash.png' alt='Icone de apagar empréstimo' class='acao'></a></td>
                         </tr>";
                         }
                     }
                     ?>
+                    
                 </table>
             </div>
-
             <a href="emprestar.php" class="novoemp">REALIZAR NOVO EMPRÉSTIMO</a>
 
         </div>

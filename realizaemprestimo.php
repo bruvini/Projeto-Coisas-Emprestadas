@@ -18,32 +18,32 @@ function formataTelefone($numero)
     return $novo;
 }
 
+$item = $_POST['item'];
+$nome = $_POST['user'];
 
-/*
-    echo "REGISTRO DE EMPRÉSTIMOS <br><br>";
-    
-    echo 
-    "Item emprestado: ".$_POST["item"]."<br>";
-    echo
-    "Emprestado para: ".$_POST["user"]."<br>";
-    echo
-    "Data do empréstimo: ".$hoje."<br><br>";
 
-    echo "A data prevista para devolução é para ". $devolucao. ". Em caso de não devolução, contatar ".$_POST["user"]. " pelo telefone " . formataTelefone($_POST["fone"]).".";
-    */
+$sqlNome = "SELECT * FROM tbUsuarios WHERE nomeUser LIKE '%$nome%'";
+$sqlItem = "SELECT * FROM cadastroProdutos WHERE nomeProd LIKE '%$item%'";
+
+$resNome = mysqli_query($conn, $sqlNome);
+$resItem = mysqli_query($conn, $sqlItem);
+
+$rowNome = mysqli_fetch_assoc($resNome);
+$rowItem = mysqli_fetch_assoc($resItem);
+
 
 //variáveis do formulário de cadastro
-$item = $_POST["item"];
-$usuario = $_POST["user"];
-$fone = $_POST["fone"];
 $hoje;
 $devolucao;
+$nome = $rowNome['nomeUser'];
+$fone = $rowNome['foneUser'];
+$item = $rowItem['nomeProd'];
 
-$sql = "INSERT INTO emprestimo (nomeProd, nomeUser, fone, dataDevolucao) VALUES ('$item','$usuario','$fone','$devolucao')";
+$sql = "INSERT INTO emprestimo (nomeProd, nomeUser, fone, dataEmprestimo, dataDevolucao) VALUES ('$item','$nome','$fone','$hoje','$devolucao')";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: principal.php");
-}else {
+} else {
     header("Location: emprestar.php");
 }
 mysqli_close($conn);

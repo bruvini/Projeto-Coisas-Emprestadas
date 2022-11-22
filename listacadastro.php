@@ -12,8 +12,8 @@
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="relatorios.css">
-    <title>Coisas Emprestadas - Relatórios</title>
+    <link rel="stylesheet" href="listacadastro.css">
+    <title>Coisas Emprestadas - Meu Perfil</title>
 </head>
 
 <body>
@@ -47,8 +47,45 @@
             </ul>
         </nav>
         <div class="conteudo">
-            <h2 class="titulo">RELATÓRIOS</h2>
-            <img src="img/ERRO.png" alt="imagem de erro" class="imagemerro">
+            <div class="dados">
+                <h3 class="titulo__principal">
+                    USUÁRIOS CADASTRADOS
+                </h3>
+                <div class="principal__tabela">
+                <table class="tabela">
+                    <tr class="linha__tabela">
+                        <td class="linha__tabela">Id Nº.</td>
+                        <td class="linha__tabela">Nome do Usuário</td>
+                        <td class="linha__tabela">E-mail</td>
+                        <td class="linha__tabela">Telefone</td>
+                        <td class="linha__tabela">Sexo</td>
+                        <td class="linha__tabela">EDITAR</td>
+                        <td class="linha__tabela">EXCLUIR</td>
+                    </tr>
+                    <?php
+                    require_once 'dbcon.php';
+
+                    $sql = "SELECT idUser, nomeUser, mailUser, foneUser, sexoUser FROM tbUsuarios";
+                    $res = mysqli_query($conn, $sql);
+
+                    if ($res) {
+                        while ($row = mysqli_fetch_assoc($res)) {
+                            echo "
+                            <tr class='linha__tabela'>
+                            <td class='linha__tabela'>".$row['idUser']."</td>
+                            <td class='linha__tabela'>".$row['nomeUser']."</td>
+                            <td class='linha__tabela'>".$row['mailUser']."</td>
+                            <td class='linha__tabela'>".$row['foneUser']."</td>
+                            <td class='linha__tabela'>".$row['sexoUser']."</td>
+                            <td class='linha__tabela'><a href='perfil.php?id=".$row['idUser']. "'><img src='img/edit.png' alt='Icone de editar usuário' class='acao'></a></td>
+                            <td class='linha__tabela'><a href='excluiusuario.php?id=".$row['idUser']. "'><img src='img/trash.png' alt='Icone de apagar usuário' class='acao'></a></td>
+                        </tr>";
+                        }
+                    }
+                    ?>
+                </table>
+            </div>
+            </div>
         </div>
     </span>
 
