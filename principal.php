@@ -58,6 +58,7 @@
                         <td class="linha__tabela">Data para Devolução</td>
                         <td class="linha__tabela">EXCLUIR</td>
                     </tr>
+                    
                     <?php
                     require_once 'dbcon.php';
 
