@@ -1,3 +1,7 @@
+<?php
+    include 'autentica.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +25,7 @@
         <img src="img/logo_sem_letra.png" alt="" class="logo_1">
         <img src="img/logo.png" alt="" class="logo_2">
         <h3 class="mensagem">Bem-vindo(a)<br>
-            usuário
-            <!--<?php echo $_POST["mail"] ?> -->
+        <?php echo $_SESSION['nomeUser']; ?>
         </h3>
     </header>
 
@@ -43,6 +46,9 @@
                 </a>
                 <a href="relatorio.php" class="lista__link">
                     <li class="itens">Relatórios</li>
+                </a>
+                <a href="sair.php" class="lista__link">
+                    <li class="itens">Sair</li>
                 </a>
             </ul>
         </nav>

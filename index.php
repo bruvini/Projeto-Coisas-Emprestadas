@@ -38,18 +38,28 @@
             </p>
             <!-- AQUI É A PARTE QUE VAI FICAR O texto de atualização -->
             <p class="texto__secundario">
-                Última atualização: 14/11/2022
+                Última atualização: 22/11/2022
             </p>
         </div>
         <div class="login">
             <h2 class="login__titulo">Faça seu login no <br> <strong>PROJETO COISAS EMPRESTADAS</strong></h2>
-            <form action="principal.php" method="post">
+            <form action="recebelogin.php" method="post">
                 <div class="login__form">
                     <label for="mail" class="login__rotulo">E-mail</label><br>
                     <input type="email" name="mail" id="mail" class="login__input"><br>
 
                     <label for="senha" class="login__rotulo">Senha</label><br>
                     <input type="password" name="senha" id="senha" class="login__input">
+
+                    <?php
+                        if (isset($_GET['erro'])){
+                            echo "<p style = 'text-align: center; color: red; font-size: 12px'>Usuário e/ou senha incorretos. Tente novamente!</p>";
+                        }
+                        if (isset($_GET['auth'])){
+                            echo "<p style = 'text-align: center; color: red; font-size: 12px'>Usuário sem permissão de acesso</p>";
+                        }
+                    ?>
+                    
 
                     <input type="submit" class="login__enviar" value="Entrar">
                 </div>
